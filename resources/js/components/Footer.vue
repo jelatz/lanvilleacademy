@@ -1,9 +1,10 @@
 <template>
     <header class="p-4">
-        <h1>{{ title }}</h1>
+        <h1 class="text-xl text-center">{{ title }} &copy; {{ date }}</h1>
     </header>
 </template>
 
-<script setup lang="ts">
-const title: string = "Lanville Academy";
+<script setup>
+const title = "Lanville Academy";
+const date = new Date().getFullYear();
 </script>
