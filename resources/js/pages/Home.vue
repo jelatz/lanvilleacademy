@@ -1,5 +1,38 @@
 <template>
-  <Hero />
+  <div class="min-h-dvh w-full relative">
+    <Swiper :slides-per-view="1" :autoplay="{ delay: 3000, disableOnInteraction: false }"
+      :modules="[Navigation, Pagination, Autoplay]" :loop="true" :pagination="{ clickable: true }" class="min-h-dvh">
+      <SwiperSlide>
+        <img src="/images/hero-1.webp" alt="image 1" class="w-full h-dvh object-cover" />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <img src="/images/hero-2.png" alt="image 2" class="w-full h-dvh object-cover" />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <img src="/images/hero-3.jpg" alt="image 3" class="w-full h-dvh object-cover" />
+      </SwiperSlide>
+    </Swiper>
+
+    <div class="absolute inset-0 bg-black/50 z-20"></div>
+
+
+    <div class="absolute inset-0 flex items-center justify-center  z-30">
+      <div class="rounded-r-xl p-8 max-w-3xl">
+        <div class="text-center text-white">
+          <div class="text-xl md:text-6xl font-bold mb-4 drop-shadow-lg">Empowering Students Through <span
+              class="block">Quality Online Tutorials</span></div>
+          <p class="text-md md:text-2xl mb-6 drop-shadow-lg">Simple, guided online lessons designed to help
+            you
+            grow—at your pace.</p>
+          <a href="#"
+            class="bg-[#541517] hover:bg-[#3e0f11] text-white font-semibold text-lg py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 drop-shadow-lg">Explore
+            Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="max-full mx-auto">
     <!-- OUR POPULAR PROGRAMS SECTION-->
     <Section variant="default" padding="xl">
@@ -32,8 +65,15 @@
           Choose a Subject to Learn
         </h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure alias ad maxime natus consequatur officia adipisci magni, iusto error molestias laboriosam similique itaque! Adipisci, molestiae. Dolorem ea voluptatem alias minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad odio illum ipsum animi voluptatem excepturi, tempore cum maxime a aut consequuntur! Sequi molestias enim amet harum nemo, doloremque voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos cupiditate libero. Magni fuga saepe nam. Hic atque quis aut at rerum corrupti? Voluptas itaque rem saepe, sint dolor accusamus!
-        Consectetur, molestias labore dolores eligendi sapiente pariatur quas alias ea quaerat explicabo inventore deleniti aliquam mollitia natus maiores sed vel? Sunt vero aspernatur nesciunt ipsum quod libero laudantium ex laboriosam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure alias ad maxime natus consequatur officia
+          adipisci magni, iusto error molestias laboriosam similique itaque! Adipisci, molestiae. Dolorem ea voluptatem
+          alias minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad odio illum ipsum animi
+          voluptatem excepturi, tempore cum maxime a aut consequuntur! Sequi molestias enim amet harum nemo, doloremque
+          voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos cupiditate libero. Magni
+          fuga saepe nam. Hic atque quis aut at rerum corrupti? Voluptas itaque rem saepe, sint dolor accusamus!
+          Consectetur, molestias labore dolores eligendi sapiente pariatur quas alias ea quaerat explicabo inventore
+          deleniti aliquam mollitia natus maiores sed vel? Sunt vero aspernatur nesciunt ipsum quod libero laudantium ex
+          laboriosam!</p>
 
 
       </div>
@@ -95,6 +135,10 @@ import { ref } from 'vue';
 import Hero from "@/components/Hero.vue";
 import Section from "@/components/Section.vue";
 import Card from "@/components/Card.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 interface Program {
   id: number;

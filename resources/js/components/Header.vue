@@ -1,8 +1,8 @@
 <template>
-    <header class="w-full md:px-3">
+    <header class="w-full md:px-3 absolute top-0 z-50  bg-white/60 md:bg-[#002042] backdrop-blur-sm shadow-md">
         <div
             class="pt-5 md:p-4 w-full mx-auto flex justify-between items-center flex-col space-y-5 md:flex-row md:space-y-0">
-            <a href="/"><img src="/public/images/logo-name1.png" alt="Logo" class="w-62"></a>
+            <a href="/"><img src="/public/images/lanville_logo(1)_nobg.png" alt="Logo" class="w-96"></a>
             <nav class="relative w-full md:w-fit">
                 <!-- Mobile hamburger button -->
                 <button @click="isMenuOpen = !isMenuOpen"
@@ -17,9 +17,10 @@
                 </button>
 
                 <!-- Desktop menu -->
-                <ul class="hidden md:flex gap-10 justify-center text-md md:text-xl py-2">
+                <ul
+                    class="hidden md:flex gap-10 justify-center text-md md:text-xl py-2 text-xl font-normal text-white tracking-widest">
                     <li
-                        class="*:p-3 *:w-full *:text-center *:block *:relative *:transition-all *:duration-300 **:after:content-[''] **:after:absolute **:after:bottom-0 **:after:left-0 **:after:w-0 **:after:h-0.5 **:after:bg-current **:after:transition-all **:after:duration-300 **:hover:after:w-full">
+                        class="*:p-3 *:w-full *:text-center *:block *:relative *:transition-all *:duration-300 **:after:content-[''] **:after:absolute **:after:bottom-0 **:after:left-0 **:after:w-0 **:after:h-0.5 **:after:bg-current **:after:transition-all **:after:duration-300 **:hover:after:w-full ">
                         <Link to="/">Home</Link>
                     </li>
                     <li
@@ -29,10 +30,6 @@
                     <li
                         class="*:p-3 *:w-full *:text-center *:block *:relative *:transition-all *:duration-300 **:after:content-[''] **:after:absolute **:after:bottom-0 **:after:left-0 **:after:w-0 **:after:h-0.5 **:after:bg-current **:after:transition-all **:after:duration-300 **:hover:after:w-full">
                         <Link to="">Programs</Link>
-                    </li>
-                    <li
-                        class="*:p-3 *:w-full *:text-center *:block *:relative *:transition-all *:duration-300 **:after:content-[''] **:after:absolute **:after:bottom-0 **:after:left-0 **:after:w-0 **:after:h-0.5 **:after:bg-current **:after:transition-all **:after:duration-300 **:hover:after:w-full">
-                        <Link to="">Blog</Link>
                     </li>
                     <li
                         class="*:p-3 *:w-full *:text-center *:block *:relative *:transition-all *:duration-300 **:after:content-[''] **:after:absolute **:after:bottom-0 **:after:left-0 **:after:w-0 **:after:h-0.5 **:after:bg-current **:after:transition-all **:after:duration-300 **:hover:after:w-full">
@@ -50,8 +47,6 @@
                             @click="isMenuOpen = false">About Us</a></li>
                     <li><a href="" class="block p-3 text-center hover:bg-[#541517] hover:text-white transition-colors"
                             @click="isMenuOpen = false">Programs</a></li>
-                    <li><a href="" class="block p-3 text-center hover:bg-[#541517] hover:text-white transition-colors"
-                            @click="isMenuOpen = false">Blog</a></li>
                     <li><a href="" class="block p-3 text-center hover:bg-[#541517] hover:text-white transition-colors"
                             @click="isMenuOpen = false">Contact Us</a></li>
                 </ul>
