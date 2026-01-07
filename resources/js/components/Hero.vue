@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 </script>
 
 <template>
+    <h1>hety</h1>
     <div class="w-full relative">
         <Swiper :slides-per-view="1" :autoplay="{ delay: 3000, disableOnInteraction: false }"
             :modules="[Navigation, Pagination, Autoplay]" :loop="true" :pagination="{ clickable: true }" class="h-200">
@@ -31,7 +32,7 @@ import "swiper/css/pagination";
                         you
                         grow—at your pace.</p>
                     <a href="#"
-                        class="bg-[#541517] hover:bg-[#3e0f11] text-white font-semibold text-lg py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 drop-shadow-lg">Explore
+                        class="bg-[#D6B04F] hover:bg-[#D6B04F] text-white font-semibold text-lg py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 drop-shadow-lg">Explore
                         Programs</a>
                 </div>
             </div>

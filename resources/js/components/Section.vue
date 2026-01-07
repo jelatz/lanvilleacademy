@@ -19,9 +19,9 @@ const props = withDefaults(defineProps<Props>(), {
 
 const baseClasses = computed(() => {
     const variantClasses = {
-        default: 'bg-white',
-        primary: 'bg-[#541517] text-white',
-        secondary: 'bg-[#DDCDB1] text-black'
+        default: 'bg-[#1B1B1A] text-white border-b border-gray-600 ',
+        primary: 'bg-[#551819] text-white',
+        secondary: 'bg-[#D6B04F] text-black'
     };
 
     const paddingClasses = {
