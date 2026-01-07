@@ -15,7 +15,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
     stats: () => [
-        { id: 1, value: '50K+', label: 'Active Learners' },
+        { id: 1, value: '100+', label: 'Active Learners' },
         { id: 2, value: '50+', label: 'Courses Available' },
         { id: 3, value: '98%', label: 'Satisfaction Rate' }
     ],

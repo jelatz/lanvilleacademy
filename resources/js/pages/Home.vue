@@ -8,7 +8,7 @@
           <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Learn Without <span
               class="text-[#f2c744] lg:block font-bold mt-1">Limits</span>
           </h1>
-          <p class="leading-relaxed max-w-lg text-[#c4b484] text-lg lg:text-xl mb-8">Unlock your
+          <p class="leading-relaxed max-w-lg text-[#d0c9b6] text-lg lg:text-xl mb-8">Unlock your
             ptoential
             with world-class online tutorials. Expert instructors, flexible
             schedules, and personalized learning paths designed for your success.</p>
@@ -31,22 +31,19 @@
 
     <!-- STATS -->
     <Section variant="default" padding="xl">
-      <div>
-
-        <Stats />
-      </div>
+      <Stats />
     </Section>
 
     <!-- WHY CHOOSE LANVILLE -->
     <Section variant="default" padding="xl">
-      <div>
+      <div class="max-w-384 mx-auto">
         <div class="bg-[#f2c744] w-24 h-2 mb-10"></div>
         <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Why Choose Lanville?</h1>
-        <p class="leading-relaxed max-w-lg text-[#c4b484] text-lg lg:text-xl mb-8">We combine cutting-edge technology
+        <p class="leading-relaxed max-w-lg text-[#d0c9b6] text-lg lg:text-xl mb-8">We combine cutting-edge technology
           with expert instruction to create an unparalleled learning experience.
         </p>
 
-        <Card :cards="cardsWithIcons" />
+        <Card :cards="cardsWithIcons" iconClass="w-16 h-16 bg-[#242424] p-4 rounded-lg hover:bg-[#f2c744]" />
       </div>
     </Section>
   </div>
@@ -60,7 +57,7 @@ import "swiper/css/pagination";
 import Stats from "@/components/Stats.vue";
 import Card from "@/components/Card.vue";
 // Icons
-import { ArrowSmallRightIcon, BookOpenIcon, AcademicCapIcon, UsersIcon } from "@heroicons/vue/24/outline";
+import { ArrowSmallRightIcon, BookOpenIcon, AcademicCapIcon, UsersIcon, BoltIcon } from "@heroicons/vue/24/outline";
 
 // Cards (Why Choose Lanville Section)
 const cardsWithIcons = [
@@ -72,8 +69,8 @@ const cardsWithIcons = [
   },
   {
     id: 2,
-    title: "Rich Content",
-    icon: BookOpenIcon,
+    title: "Flexible Learning",
+    icon: BoltIcon,
     description: "Access thousands of courses"
   },
   {

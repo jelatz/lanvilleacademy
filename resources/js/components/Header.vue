@@ -1,6 +1,6 @@
 <template>
     <header class="w-full md:px-3 shadow-md bg-[#1B1B1A]">
-        <div class="p-4 w-full mx-auto flex justify-between items-center">
+        <div class="p-4 w-full md:max-w-384 mx-auto flex justify-between items-center">
             <a href="/"><img src="/public/images/logo-white.png" alt="Logo" class="w-48 md:w-64"></a>
             <button class="bg-[#f2c744] px-6 py-2 rounded">Get Started</button>
         </div>

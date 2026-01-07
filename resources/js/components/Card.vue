@@ -33,7 +33,7 @@ withDefaults(defineProps<Props>(), {
   cardClass: "",
   imageClass: "w-full h-auto",
   iconClass: "w-16 h-16 bg-[#242424] p-4 rounded-lg",
-  titleClass: "text-xl font-bold mt-4 mb-2",
+  titleClass: "text-2xl font-bold mt-8 mb-2",
   descriptionClass: "text-gray-600"
 })
 </script>
