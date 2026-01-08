@@ -20,7 +20,7 @@ withDefaults(defineProps<Props>(), {
         { id: 3, value: '98%', label: 'Satisfaction Rate' }
     ],
     containerClass: 'grid grid-cols-1 md:grid-cols-3 gap-12 mx-auto max-w-384',
-    statItemClass: 'text-left',
+    statItemClass: 'text-center',
     valueClass: 'text-4xl md:text-5xl font-bold text-[#f2c744] mb-2',
     labelClass: 'text-[#c4b484] '
 });
