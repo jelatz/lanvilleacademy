@@ -19,8 +19,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 const baseClasses = computed(() => {
     const variantClasses = {
-        default: 'bg-[#1B1B1A] text-white border-b border-gray-600 ',
-        primary: 'bg-[#551819] text-white',
+        default: 'bg-white border-b border-gray-600 ',
+        primary: 'bg-primary text-white',
         secondary: 'bg-[#D6B04F] text-black'
     };
 

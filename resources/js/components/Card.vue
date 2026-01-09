@@ -32,9 +32,9 @@ withDefaults(defineProps<Props>(), {
   containerClass: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12",
   cardClass: "",
   imageClass: "w-full h-auto",
-  iconClass: "w-16 h-16 bg-[#242424] p-4 rounded-lg",
+  iconClass: "w-16 h-16 bg-accent p-4 rounded-lg",
   titleClass: "text-2xl font-bold mt-8 mb-2",
-  descriptionClass: "text-gray-600"
+  descriptionClass: "text-white"
 })
 </script>
 

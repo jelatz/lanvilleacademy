@@ -1,14 +1,14 @@
 <template>
-    <footer class="p-4 bg-[#1B1B1A]">
+    <footer class="p-4 bg-primary">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 max-w-384 mx-auto">
             <div>
-                <img src="/images/logo-white.png" alt="logo" class="h-10 w-auto mb-4">
-                <p class="text-md text-gray-500">Empowering learners worldwide with quality education and career
+                <img src="/images/logo-white.png" alt="logo" class="h-20 w-auto mb-4">
+                <p class="text-md text-white">Empowering learners worldwide with quality education and career
                     advancement opportunities.</p>
             </div>
             <div>
                 <h1 class="font-bold mb-4 text-white">Platform</h1>
-                <ul class="text-gray-500">
+                <ul class="text-white">
                     <li>Courses</li>
                     <li>Pricing</li>
                     <li>Certificates</li>
@@ -16,14 +16,14 @@
             </div>
             <div>
                 <h1 class="font-bold mb-4 text-white">Company</h1>
-                <ul class="text-gray-500">
+                <ul class="text-white">
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
             </div>
             <div>
                 <h1 class="font-bold mb-4 text-white">Legal</h1>
-                <ul class="text-gray-500">
+                <ul class="text-white">
                     <li>Privacy Policy</li>
                     <li>Terms of Use</li>
                     <li>Cookie Policy</li>

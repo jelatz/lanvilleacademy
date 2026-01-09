@@ -2,31 +2,28 @@
   <div class="min-h-dvh mx-auto">
     <!-- HERO -->
     <Section variant="default" padding="xl">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center max-w-384 mx-auto">
+      <Hero imageSrc="/images/hero-main.jpg">
         <div>
-          <div class="bg-[#f2c744] w-24 h-2 mb-10"></div>
-          <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Learn Without <span
-              class="text-[#f2c744] lg:block font-bold mt-1">Limits</span>
+          <div class="bg-accent w-24 h-2 mb-10"></div>
+          <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Unlock Your Potential <span
+              class="text-accent lg:block font-bold mt-1">Learn Limitlessly</span>
           </h1>
-          <p class="leading-relaxed max-w-lg text-[#d0c9b6] text-lg lg:text-xl mb-8">Unlock your
+          <p class="leading-relaxed max-w-lg text-black text-lg lg:text-xl mb-8">Unlock your
             ptoential
             with world-class online tutorials. Expert instructors, flexible
             schedules, and personalized learning paths designed for your success.</p>
           <div class="flex flex-col lg:flex-row gap-4 w-full">
             <button
-              class="bg-[#f2c744] px-6 py-2 rounded text-black hover:-translate-y-2 hover:bg-[#cea11a] transition-all duration-500">Explore
+              class="bg-primary px-6 py-2 rounded text-white hover:-translate-y-2 hover:bg-[#0f2b60] transition-all duration-500">Explore
               Courses
               <ArrowRight class="w-6 h-6 inline-block" />
             </button>
             <button
-              class="bg-transparent ring-1 ring-[#f2c744] px-6 py-2 rounded text-[#f2c744] hover:bg-[#f2c744] hover:text-black transition-all">Watch
+              class="bg-transparent ring-1 ring-primary px-6 py-2 rounded text-primary hover:bg-[#0f2b60] hover:text-white transition-all">Watch
               Demo</button>
           </div>
         </div>
-        <div>
-          <img src="/images/hero-main.jpg" alt="laptop" class="w-full rounded-lg shadow-2xl">
-        </div>
-      </div>
+      </Hero>
     </Section>
 
     <!-- STATS -->
@@ -35,15 +32,16 @@
     </Section>
 
     <!-- WHY CHOOSE LANVILLE -->
-    <Section variant="default" padding="xl">
+    <Section variant="primary" padding="xl">
       <div class="max-w-384 mx-auto">
-        <div class="bg-[#f2c744] w-24 h-2 mb-10"></div>
-        <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Why Choose Lanville?</h1>
-        <p class="leading-relaxed max-w-lg text-[#d0c9b6] text-lg lg:text-xl mb-8">We combine cutting-edge technology
+        <div class="bg-accent w-24 h-2 mb-10"></div>
+        <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Why Choose <span
+            class="text-accent">Lanville?</span></h1>
+        <p class="leading-relaxed max-w-lg text-white text-lg lg:text-xl mb-8">We combine cutting-edge technology
           with expert instruction to create an unparalleled learning experience.
         </p>
 
-        <Card :cards="cardsWithIcons" iconClass="w-16 h-16 bg-[#242424] p-4 rounded-lg hover:bg-[#f2c744]" />
+        <Card :cards="cardsWithIcons" iconClass="w-16 h-16 bg-accent p-4 rounded-lg hover:bg-[#f4b147]" />
       </div>
     </Section>
 
@@ -53,9 +51,9 @@
         <div class="order-2 lg:order-1"><img src="/images/courses-hero.jpg" alt="laptop"
             class="w-full rounded-lg shadow-2xl"></div>
         <div class="order-1 lg:order-2">
-          <div class="bg-[#f2c744] w-24 h-2 mb-10"></div>
+          <div class="bg-accent w-24 h-2 mb-10"></div>
           <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">Curated <span
-              class="text-[#f2c744] font-bold mt-1">Courses</span> for Every Path
+              class="text-accent font-bold mt-1">Courses</span> for Every Path
           </h1>
           <p class="text-lg text-muted-foreground mb-8 leading-relaxed">From beginner fundamentals to
             advanced specializations, our carefully designed curriculum covers the skills you need to succeed in today's
@@ -63,33 +61,33 @@
           </p>
           <div class="space-y-4 mb-8 *:flex *:items-start *:gap-4">
             <div>
-              <div class="w-6 h-6 rounded-full bg-[#f2c744] flex items-center justify-center shrink-0 mt-1"><span
-                  class="text-[#242424] text-sm font-bold">✓</span></div>
+              <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0 mt-1"><span
+                  class="text-black text-sm font-bold">✓</span></div>
               <div>
                 <h4 class="font-bold text-lg">Technology & Programming</h4>
-                <p class="text-gray-600">Master coding, web development, and software engineering</p>
+                <p class="text-white">Master coding, web development, and software engineering</p>
               </div>
             </div>
             <div>
-              <div class="w-6 h-6 rounded-full bg-[#f2c744] flex items-center justify-center shrink-0 mt-1"><span
-                  class="text-[#242424] text-sm font-bold">✓</span></div>
+              <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0 mt-1"><span
+                  class="text-black text-sm font-bold">✓</span></div>
               <div>
                 <h4 class="font-bold text-lg">Business & Entrepreneurship</h4>
-                <p class="text-gray-600">Build skills for leadership, marketing, and business growth</p>
+                <p class="text-white">Build skills for leadership, marketing, and business growth</p>
               </div>
             </div>
             <div>
-              <div class="w-6 h-6 rounded-full bg-[#f2c744] flex items-center justify-center shrink-0 mt-1"><span
-                  class="text-[#242424] text-sm font-bold">✓</span></div>
+              <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0 mt-1"><span
+                  class="text-black text-sm font-bold">✓</span></div>
               <div>
                 <div>
                   <h4 class="font-bold text-lg">Creative Arts & Design</h4>
-                  <p class="text-gray-600">Develop creative talents in design, music, and visual arts.</p>
+                  <p class="text-blawhiteck">Develop creative talents in design, music, and visual arts.</p>
                 </div>
               </div>
             </div>
             <button
-              class="bg-[#f2c744] px-6 py-2 rounded text-black hover:-translate-y-2 hover:bg-[#cea11a] transition-all duration-500">Browse
+              class="bg-accent px-6 py-2 rounded text-black hover:-translate-y-2 hover:bg-[#f4b147] transition-all duration-500">Browse
               All Courses
               <ArrowRight class="w-6 h-6 inline-block" />
             </button>
@@ -100,18 +98,20 @@
 
     <!-- READY TO START LEARNING -->
     <Section variant="default" padding="xl">
-      <div class="max-w-384 mx-auto bg-gray-500 rounded-lg p-12 md:p16 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Ready to Start Learning?</h1>
-        <p class="text-gray-500">Join hundreds of students already transforming their careers with Lanville Academy.</p>
+      <div class="max-w-384 mx-auto rounded-lg p-12 md:p16 text-center bg-gray-400">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Ready to Start Learning?</h1>
+        <p class="text-white">Join hundreds of students already transforming their careers with Lanville Academy.</p>
 
-        <div class="flex justify-center items-center space-x-4">
+        <div
+          class="flex justify-center flex-col space-y-3 lg:space-y-0 **:w-full mt-5 items-center lg:space-x-4 lg:flex-row lg:w-96 lg:mx-auto">
           <button
-            class="bg-[#f2c744] px-6 py-2 rounded text-black hover:-translate-y-2 hover:bg-[#cea11a] transition-all duration-500">Enroll
-            Now
-            <ArrowRight class="w-6 h-6 inline-block" />
+            class="bg-primary rounded px-6 py-2 text-white hover:-translate-y-1 hover:bg-[#0f2b60] transition-all duration-500 flex items-center justify-center text-nowrap">
+            Enroll Now
+            <ArrowRight class="w-6 h-6" />
           </button>
+
           <button
-            class="bg-transparent ring-1 ring-[#f2c744] px-6 py-2 rounded text-[#f2c744] hover:bg-[#f2c744] hover:text-black transition-all">Schedule
+            class="bg-transparent ring-1 ring-primary px-6 py-2 rounded text-primary hover:bg-[#0f2b60] hover:text-white transition-all">Schedule
             a Demo</button>
         </div>
       </div>
@@ -120,6 +120,7 @@
 </template>
 
 <script setup lang="ts">
+import Hero from "@/components/Hero.vue";
 import Section from "@/components/Section.vue";
 import "swiper/css";
 import "swiper/css/pagination";

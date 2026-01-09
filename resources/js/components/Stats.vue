@@ -21,8 +21,8 @@ withDefaults(defineProps<Props>(), {
     ],
     containerClass: 'grid grid-cols-1 md:grid-cols-3 gap-12 mx-auto max-w-384',
     statItemClass: 'text-center',
-    valueClass: 'text-4xl md:text-5xl font-bold text-[#f2c744] mb-2',
-    labelClass: 'text-[#c4b484] '
+    valueClass: 'text-4xl md:text-5xl font-bold text-black mb-2',
+    labelClass: 'text-black '
 });
 </script>
 
