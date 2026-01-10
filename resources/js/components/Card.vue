@@ -21,25 +21,17 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  cards: () => [
-    { id: 1, title: "Expert Instructors", imageUrl: "", imageAlt: "", description: "This is sample" },
-    { id: 2, title: "Expert Instructors", imageUrl: "", imageAlt: "", description: "This is sample" },
-    { id: 3, title: "Expert Instructors", imageUrl: "", imageAlt: "", description: "This is sample" },
-    { id: 4, title: "Expert Instructors", imageUrl: "", imageAlt: "", description: "This is sample" },
-    { id: 5, title: "Expert Instructors", imageUrl: "", imageAlt: "", description: "This is sample" },
-    { id: 6, title: "Expert Instructors", imageUrl: "", imageAlt: "", description: "This is sample" },
-  ],
   containerClass: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12",
   cardClass: "",
   imageClass: "w-full h-auto",
   iconClass: "w-16 h-16 bg-accent p-4 rounded-lg",
-  titleClass: "text-2xl font-bold mt-8 mb-2",
-  descriptionClass: "text-white"
+  titleClass: "text-2xl font-bold mt-8 mb-2 p-4",
+  descriptionClass: "text-black p-4"
 })
 </script>
 
 <template>
-  <div :class="containerClass">
+  <div :class="[containerClass, ' gap-12']">
     <div v-for="card in cards" :key="card.id" :class="cardClass">
       <!-- Render Icon if provided -->
       <component v-if="card.icon" :is="card.icon" :class="iconClass" />

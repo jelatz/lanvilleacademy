@@ -15,6 +15,7 @@
         "vite": "^7.0.7"
     },
     "dependencies": {
+        "@fontsource/inter": "^5.2.8",
         "@iconify/vue": "^5.0.0",
         "@inertiajs/vue3": "^2.2.18",
         "@vitejs/plugin-vue": "^6.0.2",

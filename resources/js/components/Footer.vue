@@ -1,5 +1,5 @@
 <template>
-    <footer class="p-4 bg-primary">
+    <footer class="p-4 bg-primary pt-20">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 max-w-384 mx-auto">
             <div>
                 <img src="/images/logo-white.png" alt="logo" class="h-20 w-auto mb-4">

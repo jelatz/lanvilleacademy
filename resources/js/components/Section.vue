@@ -9,7 +9,7 @@ import { computed } from 'vue';
 
 interface Props {
     variant?: 'default' | 'primary' | 'secondary';
-    padding?: 'sm' | 'md' | 'lg' | 'xl';
+    padding?: 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const baseClasses = computed(() => {
     const variantClasses = {
-        default: 'bg-white border-b border-gray-600 ',
+        default: 'bg-white',
         primary: 'bg-primary text-white',
         secondary: 'bg-[#D6B04F] text-black'
     };
@@ -28,7 +28,9 @@ const baseClasses = computed(() => {
         sm: 'p-4',
         md: 'p-8',
         lg: 'p-12',
-        xl: 'p-16'
+        xl: 'p-16',
+        xxl: 'p-20',
+        xxxl: 'p-24',
     };
 
     return `${variantClasses[props.variant]} ${paddingClasses[props.padding]}`;

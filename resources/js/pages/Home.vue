@@ -26,10 +26,31 @@
       </Hero>
     </Section>
 
-    <!-- STATS -->
-    <Section variant="default" padding="xl">
-      <Stats :stats="stats" />
+    <!-- CORE VALUES -->
+    <Section variant="default" class="p-32">
+      <div class="max-w-384 mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <Shield class="w-12 h-12 mx-auto text-accent mb-4" />
+          <h3 class="font-bold text-xl mb-2">Integrity</h3>
+          <p class="text-gray-700">We deliver honest, transparent, and reliable education.</p>
+        </div>
+        <div class="text-center">
+          <Heart class="w-12 h-12 mx-auto text-accent mb-4" />
+          <h3 class="font-bold text-xl mb-2">Passion</h3>
+          <p class="text-gray-700">We are committed to inspiring lifelong learners worldwide.</p>
+        </div>
+        <div class="text-center">
+          <Globe class="w-12 h-12 mx-auto text-accent mb-4" />
+          <h3 class="font-bold text-xl mb-2">Accessibility</h3>
+          <p class="text-gray-700">Education should be available to anyone, anywhere, anytime.</p>
+        </div>
+      </div>
     </Section>
+
+    <!-- STATS -->
+    <!-- <Section variant="default" padding="xl">
+      <Stats :stats="stats" />
+    </Section> -->
 
     <!-- WHY CHOOSE LANVILLE -->
     <Section variant="primary" padding="xl">
@@ -41,7 +62,8 @@
           with expert instruction to create an unparalleled learning experience.
         </p>
 
-        <Card :cards="cardsWithIcons" iconClass="w-16 h-16 bg-accent p-4 rounded-lg hover:bg-[#f4b147]" />
+        <Card :cards="cardsWithIcons" iconClass="w-16 h-16 bg-accent p-4 rounded-lg hover:bg-[#f4b147]"
+          descriptionClass="text-white p-4" />
       </div>
     </Section>
 
@@ -65,7 +87,7 @@
                   class="text-black text-sm font-bold">✓</span></div>
               <div>
                 <h4 class="font-bold text-lg">Technology & Programming</h4>
-                <p class="text-white">Master coding, web development, and software engineering</p>
+                <p class="text-black">Master coding, web development, and software engineering</p>
               </div>
             </div>
             <div>
@@ -73,7 +95,7 @@
                   class="text-black text-sm font-bold">✓</span></div>
               <div>
                 <h4 class="font-bold text-lg">Business & Entrepreneurship</h4>
-                <p class="text-white">Build skills for leadership, marketing, and business growth</p>
+                <p class="text-black">Build skills for leadership, marketing, and business growth</p>
               </div>
             </div>
             <div>
@@ -97,10 +119,12 @@
     </Section>
 
     <!-- READY TO START LEARNING -->
-    <Section variant="default" padding="xl">
-      <div class="max-w-384 mx-auto rounded-lg p-12 md:p16 text-center bg-gray-400">
+    <Section variant="default" padding="xxxl">
+      <div class="max-w-384 mx-auto rounded-lg p-12 md:p16 text-center bg-accent/65 shadow-2xl">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Ready to Start Learning?</h1>
-        <p class="text-white">Join hundreds of students already transforming their careers with Lanville Academy.</p>
+        <p class="text-primary text-xl ">Join hundreds of students already transforming their careers with
+          Lanville
+          Academy.</p>
 
         <div
           class="flex justify-center flex-col space-y-3 lg:space-y-0 **:w-full mt-5 items-center lg:space-x-4 lg:flex-row lg:w-96 lg:mx-auto">
@@ -124,17 +148,17 @@ import Hero from "@/components/Hero.vue";
 import Section from "@/components/Section.vue";
 import "swiper/css";
 import "swiper/css/pagination";
-import Stats from "@/components/Stats.vue";
+// import Stats from "@/components/Stats.vue";
 import Card from "@/components/Card.vue";
 // Icons
-import { BookOpen, Zap, Award, Users, Globe, ArrowRight } from "lucide-vue-next";
+import { BookOpen, Zap, Award, Users, Globe, ArrowRight, Shield, Heart } from "lucide-vue-next";
 
 // Stats (Statistics Section)
-const stats = [
-  { id: 1, value: '100+', label: 'Active Learners' },
-  { id: 2, value: '50+', label: 'Courses Available' },
-  { id: 3, value: '98%', label: 'Satisfaction Rate' }
-];
+// const stats = [
+//   { id: 1, value: '100+', label: 'Active Learners' },
+//   { id: 2, value: '50+', label: 'Courses Available' },
+//   { id: 3, value: '98%', label: 'Satisfaction Rate' }
+// ];
 
 // Cards (Why Choose Lanville Section)
 const cardsWithIcons = [
