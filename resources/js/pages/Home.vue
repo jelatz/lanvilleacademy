@@ -27,8 +27,8 @@
     </Section>
 
     <!-- CORE VALUES -->
-    <Section variant="default" class="p-32">
-      <div class="max-w-384 mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+    <Section variant="default" class="lg:p-32 p-20">
+      <div class="max-w-384 mx-auto grid grid-cols-1 md:grid-cols-3 lg:gap-12 gap-20">
         <div class="text-center">
           <Shield class="w-12 h-12 mx-auto text-accent mb-4" />
           <h3 class="font-bold text-xl mb-2">Integrity</h3>
@@ -63,7 +63,7 @@
         </p>
 
         <Card :cards="cardsWithIcons" iconClass="w-16 h-16 bg-accent p-4 rounded-lg hover:bg-[#f4b147]"
-          descriptionClass="text-white p-4" />
+          descriptionClass="text-white p-4" cardClass="shadow-xl p-10" />
       </div>
     </Section>
 
@@ -129,14 +129,15 @@
         <div
           class="flex justify-center flex-col space-y-3 lg:space-y-0 **:w-full mt-5 items-center lg:space-x-4 lg:flex-row lg:w-96 lg:mx-auto">
           <button
-            class="bg-primary rounded px-6 py-2 text-white hover:-translate-y-1 hover:bg-[#0f2b60] transition-all duration-500 flex items-center justify-center text-nowrap">
+            class="bg-primary rounded px-6 py-2 text-white hover:-translate-y-1 hover:bg-[#0f2b60] transition-all duration-500 flex items-center justify-center gap-3 text-nowrap">
             Enroll Now
-            <ArrowRight class="w-6 h-6" />
+            <ArrowRight class="w-6! h-6!" />
           </button>
 
-          <button
-            class="bg-transparent ring-1 ring-primary px-6 py-2 rounded text-primary hover:bg-[#0f2b60] hover:text-white transition-all">Schedule
-            a Demo</button>
+          <button class=" bg-transparent ring-1 ring-primary px-6 py-2 rounded text-primary hover:bg-[#0f2b60]
+              hover:text-white transition-all">Schedule
+            a Demo
+          </button>
         </div>
       </div>
     </Section>
